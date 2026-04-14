@@ -22,9 +22,18 @@ public class Main {
             // Lê a opção escolhida pelo usuário
             opcao = scanner.nextInt();
             scanner.nextLine(); // Consome o "Enter" que sobra no buffer do Scanner
-            System.out.println(" usuariuo digitou a opção: "+ opcao);
-            if (opcao == 3){
-                estacionamento.exibirVagasLivres();
+
+            switch (opcao) {
+                case 1:
+                    System.out.println("Registrando entrada do veículo");
+                    break;
+                case 2:
+                    System.out.println("@#@##@#@ Saída de Veículo @#@#@#@#@#");
+                    break;
+                case 3:
+                    System.out.println("@#@#@#@# Consulta de Vagas @#@#@#@#@#@");
+                    estacionamento.exibirVagasLivres();
+                    break;
             }
         } while (opcao != 4); // O sistema continua rodando enquanto a opção não for 4 (Sair)
         System.out.println("Usuraio saiu do sistema");
