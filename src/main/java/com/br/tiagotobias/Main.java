@@ -9,7 +9,7 @@ public class Main {
         // Inicializa o Scanner para ler as informações que o usuário digitar no console
         Scanner scanner = new Scanner(System.in);
         Estacionamento estacionamento = new Estacionamento(10);
-        int opcao = 0;
+        int opcao;
         do{
             // Exibição do Menu
             System.out.println("\n--- MENU ESTACIONAMENTO ---");
